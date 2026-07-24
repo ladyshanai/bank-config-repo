@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer_service?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: customer_user
+    password: customer_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
+
+product-service:
+  product-service-url: http://localhost:8081
