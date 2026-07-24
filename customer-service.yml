@@ -1,12 +1,16 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/customer_service?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3307/customer_service?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: customer_user
     password: customer_password
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
   port: 8081
+
+eureka:
+  instance:
+    instance-id: "${spring.application.name}:${server.port}"
 
 product-service:
   product-service-url: http://localhost:8080
