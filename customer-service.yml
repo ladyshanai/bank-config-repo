@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
-  port: 8080
+  port: 8081
 
 product-service:
-  product-service-url: http://localhost:8081
+  product-service-url: http://localhost:8080
